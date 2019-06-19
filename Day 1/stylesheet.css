@@ -1,5 +1,5 @@
 html {
-	background: red;
+	background-image: url(image.jpg);
 	background-size: cover;
 	font-family: 'helvetica neue';
 	text-align: center;
@@ -39,7 +39,7 @@ body {
 
 .hand {
 	width: 50%;
-	height: 6px;
+	height: 3px;
 	background: black;
 	position: absolute;
 	top:50%;
@@ -47,4 +47,19 @@ body {
 	transform: rotate(90deg);
 	//transition: all 0.05s;
 	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+#hour {
+	background: red;
+	//width: 20px;
+	//padding-left: 14rem;
+	position: relative;
+}
+
+#min {
+	background: blue;
+}
+
+#second {
+	background: green;
 }
