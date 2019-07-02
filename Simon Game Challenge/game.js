@@ -7,6 +7,7 @@ var level = 0;
 var started = false;
 $(".bg").css("backgroundColour","#011F3F");
 $(".container").hide();
+$(".start-btn").hide();
 $(".inner").click(function() {
 
   if(!started) {
@@ -14,6 +15,19 @@ $(".inner").click(function() {
     $(".container").show();
     $("h1").text("Level"+ level);
     nextSequence();
+    started = true;
+  }
+
+});
+
+$(".start-btn").click(function() {
+
+  if(!started) {
+    $(".rules").remove();
+    $(".container").show();
+    $("h1").text("Level"+ level);
+    nextSequence();
+    $(".start-btn").hide();
     started = true;
   }
 
@@ -61,6 +75,7 @@ function checkAnswer(currentLevel) {
       //$("h1").text("Press A Key to Start");
     },2000);
     $("h1").text("Game Over, Press Any Key to Restart");
+    $(".start-btn").show();
     level = 0;
     started = false;
     gamePattern = [];
