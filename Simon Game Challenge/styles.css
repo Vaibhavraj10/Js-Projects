@@ -1,13 +1,13 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-image: url(image.jpg);
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: red;
 }
 
 .container {
@@ -61,7 +61,8 @@ body {
   font-size: 1rem;
   margin:  20%;
   margin-top: 5%;
-  color: #FEF2BF;
+  background-color: white;
+  margin-bottom: 5%;
 
 }
 
@@ -71,4 +72,66 @@ body {
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
   color: #4ECCA3;
+}
+
+.start-btn{
+    text-align: center;
+	display: inline-block;
+	margin:5px;
+    font-weight: bold;
+    padding: 10px 0 10px 10px ;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+
+}
+
+.video-game-button:active, .start-btn:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+.bg {
+	display: flex;
+	height: 40vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-liquid {
+	display: inline-block;
+	position: relative;
+	width: 240px;
+	height: 60px;
+  background-color: #011F3F;
+	border-radius: 27px;
+
+
+	font: 700 14px/60px "Droid Sans", sans-serif;
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn-liquid .inner {
+	position: relative;
+  font-family: 'Press Start 2P', cursive;
+	z-index: 2;
+}
+
+.btn-liquid canvas {
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	bottom: -50px;
+	left: -50px;
+	z-index: 1;
 }
